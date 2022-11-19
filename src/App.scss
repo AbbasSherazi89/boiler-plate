@@ -1,44 +1,494 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nosifer&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100&display=swap");
+
 //////////>>>>>>>>>>//////////>>>>>>>>>> Header //////////>>>>>>>>>>//////////>>>>>>>>>>
 
 .navbar {
-  background-color: black;
+  background-color: #160f1a;
   color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+
+  .nav-link-brand {
+    font-weight: 800;
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size: 32.4359px;
+    line-height: 170%;
+  }
   .navbar-expand-lg {
-    background-color: black;
+    background-color: #160f1a;
     color: white;
   }
-  .nav-link{
-    color: white;
+  .nav-link {
+    color: #6d7580;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
     font-weight: 600;
-    &:hover{
-      color:aqua;
+    font-size: 16px;
+    line-height: 170%;
+    &:hover {
+      color: rgb(95, 96, 96);
     }
   }
-  .navbar-toggler{
+  .nav-img {
+    width: 40px;
+    height: 40px;
+    left: 80px;
+    top: 0px;
+  }
+  .navbar-toggler {
     background-color: white;
   }
 }
 
-//////////>>>>>>>>>>//////////>>>>>>>>>> Home Page //////////>>>>>>>>>>//////////>>>>>>>>>>
+//////////>>>>>>>>>>//////////>>>>>>>>>> Hero //////////>>>>>>>>>>//////////>>>>>>>>>>
 
-.home-sec {
+.hero-sec {
+  padding-top: 10rem;
+  background-image: url("./Media/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  .hero-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .mobile-img {
+      margin-bottom: -60px;
+    }
+    h2 {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 56px;
+      color: #ffffff;
+    }
+    p {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 170%;
+      color: #ebeef2;
+    }
+    .hero-icons {
+      font-size: 25px;
+      color: #d895ff;
+    }
+  }
+}
+
+//////////>>>>>>>>>>//////////>>>>>>>>>> Table //////////>>>>>>>>>>//////////>>>>>>>>>>
+
+.table-sec {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  .table-toprow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .p1 {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 18px;
+      background: linear-gradient(95.02deg, #ff82d4 0%, #1b1378 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+    h4 {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 56px;
+    }
+    .p2 {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 170%;
+      color: #2c3a4b;
+    }
+  }
+  .table-secondrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .table-row3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .learn-btn {
+      padding: 16px 32px;
+      font-weight: 600;
+      gap: 24px;
+      color: #ffffff;
+      width: 214px !important;
+      height: 63px !important;
+      background: linear-gradient(95.02deg, #ff82d4 0%, #1b1378 100%);
+      border-radius: 8px;
+      .next-arrow {
+        font-size: 30px;
+        font-weight: 600;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+//////////>>>>>>>>>>//////////>>>>>>>>>> OnlyCard //////////>>>>>>>>>>//////////>>>>>>>>>>
+
+.onlycard-sec {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-image: url("./Media/card-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 100vh;
+  color: #ffffff;
+
+  .card-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .choose {
+      color: #ffffff;
+      background: rgba(33, 30, 31, 0.5);
+      /* White */
+
+      border: 1px solid #ffffff;
+      border-radius: 8px;
+      padding: 16px 32px;
+      gap: 24px;
+      font-weight: 700;
+      width: 288px;
+      height: 63px;
+      .next-arrow {
+        font-size: 30px;
+        font-weight: 600;
+        color: #ffffff;
+      }
+    }
+  }
 }
 
+//////////>>>>>>>>>>//////////>>>>>>>>>> Reward //////////>>>>>>>>>>//////////>>>>>>>>>>
+
+.reward-sec {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  .rewar-row1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .p1 {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 18px;
+      background: linear-gradient(95.02deg, #ff82d4 0%, #1b1378 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+    h4 {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 56px;
+    }
+    .p2 {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 170%;
+      color: #2c3a4b;
+    }
+    .learn-btn {
+      padding: 16px 32px;
+      font-weight: 600;
+      gap: 24px;
+      color: #ffffff;
+      width: 260px !important;
+      height: 63px !important;
+      background: linear-gradient(95.02deg, #ff82d4 0%, #1b1378 100%);
+      border-radius: 8px;
+      .next-arrow {
+        font-size: 30px;
+        font-weight: 600;
+        color: #ffffff;
+      }
+    }
+    .img2 {
+      margin-left: 10rem;
+    }
+    .mobile-img {
+      margin-bottom: -220px;
+      z-index: -1;
+    }
+  }
+}
+
+//////////>>>>>>>>>>//////////>>>>>>>>>> Trade //////////>>>>>>>>>>//////////>>>>>>>>>>
+
+.trade-sec {
+  padding-top: 10rem;
+  color: #ffffff;
+  background-image: url("./Media/trade-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  .trade-toprow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .p1 {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 18px;
+      background: linear-gradient(95.02deg, #ff82d4 0%, #1b1378 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+    h4 {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 56px;
+    }
+    .p2 {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 170%;
+      color: #2c3a4b;
+    }
+    .laptop-img {
+      width: 827px;
+      height: 449.04px;
+      margin-bottom: -220px;
+    }
+  }
+}
+
+//////////>>>>>>>>>>//////////>>>>>>>>>> Liquidity //////////>>>>>>>>>>//////////>>>>>>>>>>
+
+.liquidity-sec {
+  padding-top: 14rem;
+  .liquidity-row1 {
+    padding-bottom: 10rem;
+    display: flex;
+    justify-content: center;
+    h3 {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 36px;
+      color: #160f1a;
+      padding-bottom: 2rem;
+    }
+    p {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+    }
+  }
+  .liquidity-row2 {
+    // padding-bottom: 10rem;
+    display: flex;
+    justify-content: center;
+
+    .mobile-img {
+      margin-bottom: -70px;
+    }
+    .p1 {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 18px;
+      background: linear-gradient(95.02deg, #ff82d4 0%, #1b1378 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+    h3 {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 32px;
+      line-height: 36px;
+      color: #160f1a;
+      padding-bottom: 2rem;
+    }
+    p {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 170%;
+    }
+    .row2-col2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .learn-btn {
+        padding: 16px 32px;
+        font-weight: 600;
+        gap: 24px;
+        color: #ffffff;
+        width: 290px !important;
+        height: 63px !important;
+        background: linear-gradient(95.02deg, #ff82d4 0%, #1b1378 100%);
+        border-radius: 8px;
+        .next-arrow {
+          font-size: 30px;
+          font-weight: 600;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+//////////>>>>>>>>>>//////////>>>>>>>>>> crypto //////////>>>>>>>>>>//////////>>>>>>>>>>
+
+.crypto-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background-image: url("./Media/crypto-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  padding-top: 10rem;
+  .crypto-row1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .p1 {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 18px;
+      background: linear-gradient(95.02deg, #ff82d4 0%, #1b1378 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+    h3 {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 56px;
+    }
+  }
+
+  .crypto-row2 {
+    padding-top: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .border-left{
+      border-left: 1px solid grey;
+    }
+
+    p {
+      margin-bottom: 0;
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 170%;
+    }
+    h1 {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 44px;
+      line-height: 130%;
+      color: #d895ff;
+    }
+  }
+}
 
 //////////>>>>>>>>>>//////////>>>>>>>>>> Footer //////////>>>>>>>>>>//////////>>>>>>>>>>
 
-.footer-bg{
-  background-color: black;
- h6{
-  color: white;
- }
- .footer-lower-sec{
-  background-color: rgb(31, 30, 30);
-  color: white;
- }
+.footer-sec{
+  padding-top: 5rem;
+  background-color:#160F1A;
+  color: #ffffff;
+
+  .row1{
+    padding-bottom: 3rem;
+    p{
+      color: #6d7580;
+    }
+    h4{
+      padding-bottom: 1rem;
+    }
+    .icons-row1{
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+
+    }
+    .icons-size{
+      font-size: 30px;
+      color: #6d7580;
+    }
+  }
+  .row2{
+    p{
+      color: #6d7580;
+    }
+    h4{
+      padding-bottom: 1rem;
+    }
+  }
+  .row3{
+    p{
+      color: #6d7580;
+    }
+  }
 }

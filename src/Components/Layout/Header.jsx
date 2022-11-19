@@ -1,16 +1,14 @@
 import React from "react";
-import {Link} from "react-scroll"
+import { Link } from "react-scroll";
 const Header = () => {
   return (
     <>
       <div>
-        <nav className="navbar navbar-expand-lg fixed-top">
+        <nav className="navbar navbar-expand-lg py-4">
           <div className="container">
-            <a href="/">
-              <div >
-                <img className="rounded-circle"  src="assets/logo.png" alt=" Relymer logo " width={70} />
-              </div>
-            </a>
+            <Link className="nav-link-brand" to="/">
+              Crypto Yield
+            </Link>
             <button
               className="navbar-toggler text-white"
               type="button"
@@ -28,26 +26,46 @@ const Header = () => {
             >
               <ul className="navbar-nav fw-bold ms-auto">
                 <li className="nav-item ms-4">
-                  <Link
-                    className="nav-link"
-                    to="/"
-                  >
-                    About
+                  <Link className="nav-link" to="/">
+                    NFT
                   </Link>
                 </li>
                 <li className="nav-item ms-4">
                   <Link className="nav-link" to="/">
-                  Roadmap
+                    Price
                   </Link>
                 </li>
                 <li className="nav-item ms-4">
                   <Link className="nav-link" to="/">
-                  Document
+                    Products
                   </Link>
                 </li>
                 <li className="nav-item ms-4">
                   <Link className="nav-link" to="/">
-                  FAQ
+                    Company
+                  </Link>
+                </li>
+                <li className="nav-item ms-4">
+                  <Link className="nav-link" to="/">
+                    Learn
+                  </Link>
+                </li>
+                <li className="nav-item ms-4">
+                  <Link className="nav-link" to="/">
+                    <img
+                      className="nav-img"
+                      src="assets/Appstore Button.png"
+                      alt=""
+                    />
+                  </Link>
+                </li>
+                <li className="nav-item ms-4">
+                  <Link className="nav-link" to="/">
+                    <img
+                      className="nav-img"
+                      src="assets/Playstore Button.png"
+                      alt=""
+                    />
                   </Link>
                 </li>
               </ul>
